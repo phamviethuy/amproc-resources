@@ -1,0 +1,14 @@
+{
+  "Audio": {
+    "Server": "172.30.10.4",
+    "Category": "audio",
+    "User": "atstest",
+    "Password": "ncaline"
+  },
+  "ATS": {
+    "Server": "172.30.10.4",
+    "Category": "ats",
+    "User": "atstest",
+    "Password": "ncaline"
+  }
+}

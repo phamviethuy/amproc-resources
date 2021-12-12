@@ -1,0 +1,250 @@
+[
+  {
+    "Name": "Power On",
+    "Key": "PowerOn",
+    "Value": 1
+  },
+  {
+    "Name": "Power Off",
+    "Key": "PowerOff",
+    "Value": 2
+  },
+  {
+    "Name": "Cbl/Sat",
+    "Key": "CblSat",
+    "Value": 3
+  },
+  {
+    "Name": "Dvd",
+    "Key": "Dvd",
+    "Value": 4
+  },
+  {
+    "Name": "Bluray",
+    "Key": "Bluray",
+    "Value": 5
+  },
+  {
+    "Name": "Game",
+    "Key": "Game",
+    "Value": 6
+  },
+  {
+    "Name": "MediaPlayer",
+    "Key": "MediaPlayer",
+    "Value": 7
+  },
+  {
+    "Name": "8k",
+    "Key": "EightK",
+    "Value": 8
+  },
+  {
+    "Name": "Aux2",
+    "Key": "Aux2",
+    "Value": 8
+  },
+  {
+    "Name": "CD",
+    "Key": "Cd",
+    "Value": 9
+  },
+  {
+    "Name": "Aux",
+    "Key": "Aux",
+    "Value": 10
+  },
+  {
+    "Name": "Phono",
+    "Key": "Phono",
+    "Value": 11
+  },
+  {
+    "Name": "TvAudio",
+    "Key": "TvAudio",
+    "Value": 12
+  },
+  {
+    "Name": "Usb",
+    "Key": "Usb",
+    "Value": 13
+  },
+  {
+    "Name": "Tunner",
+    "Key": "Tunner",
+    "Value": 14
+  },
+  {
+    "Name": "Down",
+    "Key": "Down",
+    "Value": 15
+  },
+  {
+    "Name": "Up",
+    "Key": "Up",
+    "Value": 16
+  },
+  {
+    "Name": "Left",
+    "Key": "Left",
+    "Value": 17
+  },
+  {
+    "Name": "Right",
+    "Key": "Right",
+    "Value": 18
+  },
+  {
+    "Name": "OK",
+    "Key": "OK",
+    "Value": 19
+  },
+  {
+    "Name": "Back",
+    "Key": "Back",
+    "Value": 20
+  },
+  {
+    "Name": "Setup",
+    "Key": "Setup",
+    "Value": 21
+  },
+  {
+    "Name": "Status",
+    "Key": "Status",
+    "Value": 25
+  },
+  {
+    "Name": "Input Select",
+    "Key": "InputSelect",
+    "Value": 26
+  },
+  {
+    "Name": "Input Mode Hdmi",
+    "Key": "InputModeHdmi",
+    "Value": 27
+  },
+  {
+    "Name": "Input Mode Digital",
+    "Key": "InputModeDigital",
+    "Value": 28
+  },
+  {
+    "Name": "Input Mode Analog",
+    "Key": "InputModeAnalog",
+    "Value": 29
+  },
+  {
+    "Name": "Input Mode Auto",
+    "Key": "InputModeAuto",
+    "Value": 30
+  },
+  {
+    "Name": "Mutil Channel Stereo",
+    "Key": "MutilChannelStereo",
+    "Value": 31
+  },
+  {
+    "Name": "Cec On",
+    "Key": "CecOn",
+    "Value": 32
+  },
+  {
+    "Name": "Cec Off",
+    "Key": "CecOff",
+    "Value": 33
+  },
+  {
+    "Name": "TestTone On",
+    "Key": "TestToneOn",
+    "Value": 34
+  },
+  {
+    "Name": "TestTone Off",
+    "Key": "TestToneOff",
+    "Value": 35
+  },
+  {
+    "Name": "Default Vol",
+    "Key": "DefaultVol",
+    "Value": 36
+  },
+  {
+    "Name": "HdmiOut Tv",
+    "Key": "HdmiOutTv",
+    "Value": 37
+  },
+  {
+    "Name": "HdmiOut Amp",
+    "Key": "HdmiOutAmp",
+    "Value": 38
+  },
+  {
+    "Name": "Arc On",
+    "Key": "ArcOn",
+    "Value": 39
+  },
+  {
+    "Name": "Arc Off",
+    "Key": "ArcOff",
+    "Value": 40
+  },
+  {
+    "Name": "Zone2 On",
+    "Key": "Zone2On",
+    "Value": 41
+  },
+  {
+    "Name": "Zone2 Off",
+    "Key": "Zone2Off",
+    "Value": 42
+  },
+  {
+    "Name": "Surroundback On",
+    "Key": "SurroundbackOn",
+    "Value": 45
+  },
+  {
+    "Name": "Default Vol Zone2",
+    "Key": "DefaultVolZone2",
+    "Value": 47
+  },
+  {
+    "Name": "Power On Zone2",
+    "Key": "PowerOnZone2",
+    "Value": 49
+  },
+  {
+    "Name": "Power Off Zone2",
+    "Key": "PowerOffZone2",
+    "Value": 50
+  },
+  {
+    "Name": "FR Tone",
+    "Key": "FRTone",
+    "Value": 53
+  },
+
+  {
+    "Name": "Version",
+    "Key": "Version",
+    "Value": 54
+  },
+
+
+  {
+    "Name": "HeadPhone",
+    "Key": "HeadPhone",
+    "Value": 4
+  },
+  {
+    "Name": "HdmiOut1 On",
+    "Key": "HdmiOut1",
+    "Value": 8
+  },
+  {
+    "Name": "HdmiOut2 On",
+    "Key": "HdmiOut2",
+    "Value": 9
+  }
+]

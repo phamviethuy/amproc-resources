@@ -1,0 +1,843 @@
+[
+  {
+    "Id": "e5b690d4-cf67-4dee-a21d-8e97e3aa6f4e",
+    "TestingModuleStatus": 2,
+    "TestingModule": "Zone2",
+    "TestingStep": 0,
+    "Result": 2,
+    "Progress": 0,
+    "Name": "ZONE2",
+    "TestingOptions": [
+      "Audio"
+    ],
+    "IsRetest": false,
+    "Order": 10,
+    "IsEnable": true,
+    "DetailResults": [
+
+      {
+        "Label": "SurroundBack-Left",
+        "Key": "SurroundBackLeft",
+        "IsHasChild": true,
+        "DetailResults": [
+          {
+            "Label": "Tần số",
+            "Key": "Frequency",
+            "Unit": "Hz"
+          },
+          {
+            "Label": "Biên độ",
+            "Key": "Amplitude",
+            "Unit": "V"
+          },
+          {
+            "Label": "Thd",
+            "Key": "Thd",
+            "Unit": "%"
+          }
+        ]
+      },
+      {
+        "Label": "SurroundBack-Right",
+        "Key": "SurroundBackRight",
+        "IsHasChild": true,
+        "DetailResults": [
+          {
+            "Label": "Tần số",
+            "Key": "Frequency",
+            "Unit": "Hz"
+          },
+          {
+            "Label": "Biên độ",
+            "Key": "Amplitude",
+            "Unit": "V"
+          },
+          {
+            "Label": "Thd",
+            "Key": "Thd",
+            "Unit": "%"
+          }
+        ]
+      }
+    ]
+  }, //Zone2
+  {
+    "Id": "e5b690d4-cf67-4dee-a21d-8e97e3aa6f4e",
+    "TestingModuleStatus": 2,
+    "TestingModule": "HdmiCblSat",
+    "TestingStep": 0,
+    "Result": 2,
+    "Progress": 0,
+    "Name": "HDMI-CBL/SAT",
+    "TestingOptions": [
+      "Audio",
+      "Video"
+    ],
+    "VideoOutputs": [ "HdmiOut1" ],
+    "IsRetest": false,
+    "Order": 2,
+    "IsEnable": true,
+    "DetailResults": [
+      {
+        "Label": "Front-Left",
+        "Key": "FrontLeft",
+        "IsHasChild": true,
+        "DetailResults": [
+          {
+            "Label": "Tần số",
+            "Key": "Frequency",
+            "Unit": "Hz"
+          },
+          {
+            "Label": "Biên độ",
+            "Key": "Amplitude",
+            "Unit": "V"
+          },
+          {
+            "Label": "Thd",
+            "Key": "Thd",
+            "Unit": "%"
+          }
+        ]
+      },
+      {
+        "Label": "Front-Right",
+        "Key": "FrontRight",
+        "IsHasChild": true,
+        "DetailResults": [
+          {
+            "Label": "Tần số",
+            "Key": "Frequency",
+            "Unit": "Hz"
+          },
+          {
+            "Label": "Biên độ",
+            "Key": "Amplitude",
+            "Unit": "V"
+          },
+          {
+            "Label": "Thd",
+            "Key": "Thd",
+            "Unit": "%"
+          }
+        ]
+      },
+      {
+        "Label": "HdmiOut1",
+        "Key": "HdmiOut1",
+        "IsHasChild": true,
+        "DetailResults": [
+          {
+            "Label": "Diff",
+            "Key": "DifferentPercent"
+          },
+
+          {
+            "Label": "Size",
+            "Key": "Size"
+          }
+        ]
+      }
+    ]
+  }, //HDMI-CBL/SAT
+  {
+    "Id": "e5b690d4-cf67-4dee-a21d-8e97e3aa6f4e",
+    "TestingModuleStatus": 2,
+    "TestingModule": "Hdmi8k",
+    "TestingStep": 0,
+    "Result": 2,
+    "Progress": 0,
+    "Name": "HDMI-8K",
+    "TestingOptions": [
+      "Audio",
+      "Video"
+    ],
+    "IsRetest": false,
+    "Order": 2,
+    "IsEnable": true,
+    "VideoOutputs": [ "HdmiOut1" ],
+    "DetailResults": [
+      {
+        "Label": "Front-Left",
+        "Key": "FrontLeft",
+        "IsHasChild": true,
+        "DetailResults": [
+          {
+            "Label": "Tần số",
+            "Key": "Frequency",
+            "Unit": "Hz"
+          },
+          {
+            "Label": "Biên độ",
+            "Key": "Amplitude",
+            "Unit": "V"
+          },
+          {
+            "Label": "Thd",
+            "Key": "Thd",
+            "Unit": "%"
+          }
+        ]
+      },
+      {
+        "Label": "Front-Right",
+        "Key": "FrontRight",
+        "IsHasChild": true,
+        "DetailResults": [
+          {
+            "Label": "Tần số",
+            "Key": "Frequency",
+            "Unit": "Hz"
+          },
+          {
+            "Label": "Biên độ",
+            "Key": "Amplitude",
+            "Unit": "V"
+          },
+          {
+            "Label": "Thd",
+            "Key": "Thd",
+            "Unit": "%"
+          }
+        ]
+      },
+      {
+        "Label": "Center",
+        "Key": "Center",
+        "IsHasChild": true,
+        "DetailResults": [
+          {
+            "Label": "Tần số",
+            "Key": "Frequency",
+            "Unit": "Hz"
+          },
+          {
+            "Label": "Biên độ",
+            "Key": "Amplitude",
+            "Unit": "V"
+          },
+          {
+            "Label": "Thd",
+            "Key": "Thd",
+            "Unit": "%"
+          }
+        ]
+      },
+      {
+        "Label": "Surround-Left",
+        "Key": "SurroundLeft",
+        "IsHasChild": true,
+        "DetailResults": [
+          {
+            "Label": "Tần số",
+            "Key": "Frequency",
+            "Unit": "Hz"
+          },
+          {
+            "Label": "Biên độ",
+            "Key": "Amplitude",
+            "Unit": "V"
+          },
+          {
+            "Label": "Thd",
+            "Key": "Thd",
+            "Unit": "%"
+          }
+        ]
+      },
+      {
+        "Label": "Surround-Right",
+        "Key": "SurroundRight",
+        "IsHasChild": true,
+        "DetailResults": [
+          {
+            "Label": "Tần số",
+            "Key": "Frequency",
+            "Unit": "Hz"
+          },
+          {
+            "Label": "Biên độ",
+            "Key": "Amplitude",
+            "Unit": "V"
+          },
+          {
+            "Label": "Thd",
+            "Key": "Thd",
+            "Unit": "%"
+          }
+        ]
+      },
+      {
+        "Label": "SurroundBack-Left",
+        "Key": "SurroundBackLeft",
+        "IsHasChild": true,
+        "DetailResults": [
+          {
+            "Label": "Tần số",
+            "Key": "Frequency",
+            "Unit": "Hz"
+          },
+          {
+            "Label": "Biên độ",
+            "Key": "Amplitude",
+            "Unit": "V"
+          },
+          {
+            "Label": "Thd",
+            "Key": "Thd",
+            "Unit": "%"
+          }
+        ]
+      },
+      {
+        "Label": "SurroundBack-Right",
+        "Key": "SurroundBackRight",
+        "IsHasChild": true,
+        "DetailResults": [
+          {
+            "Label": "Tần số",
+            "Key": "Frequency",
+            "Unit": "Hz"
+          },
+          {
+            "Label": "Biên độ",
+            "Key": "Amplitude",
+            "Unit": "V"
+          },
+          {
+            "Label": "Thd",
+            "Key": "Thd",
+            "Unit": "%"
+          }
+        ]
+      },
+      {
+        "Label": "HdmiOut1",
+        "Key": "HdmiOut1",
+        "IsHasChild": true,
+        "DetailResults": [
+          {
+            "Label": "Diff",
+            "Key": "DifferentPercent"
+          },
+
+          {
+            "Label": "Size",
+            "Key": "Size"
+          }
+        ]
+      }
+    ]
+  }, //HDMI-8K
+  {
+    "Id": "e5b690d4-cf67-4dee-a21d-8e97e3aa6f4e",
+    "TestingModuleStatus": 2,
+    "TestingModule": "HdmiMediaPlayer",
+    "TestingStep": 0,
+    "Result": 2,
+    "Progress": 0,
+    "Name": "HDMI-MEDIA PLAYER",
+    "VideoOutputs": [ "HdmiOut1" ],
+    "TestingOptions": [
+      "Audio",
+      "Video"
+    ],
+    "IsRetest": false,
+    "Order": 3,
+    "IsEnable": true,
+    "DetailResults": [
+      {
+        "Label": "Front-Left",
+        "Key": "FrontLeft",
+        "IsHasChild": true,
+        "DetailResults": [
+          {
+            "Label": "Tần số",
+            "Key": "Frequency",
+            "Unit": "Hz"
+          },
+          {
+            "Label": "Biên độ",
+            "Key": "Amplitude",
+            "Unit": "V"
+          },
+          {
+            "Label": "Thd",
+            "Key": "Thd",
+            "Unit": "%"
+          }
+        ]
+      },
+      {
+        "Label": "Front-Right",
+        "Key": "FrontRight",
+        "IsHasChild": true,
+        "DetailResults": [
+          {
+            "Label": "Tần số",
+            "Key": "Frequency",
+            "Unit": "Hz"
+          },
+          {
+            "Label": "Biên độ",
+            "Key": "Amplitude",
+            "Unit": "V"
+          },
+          {
+            "Label": "Thd",
+            "Key": "Thd",
+            "Unit": "%"
+          }
+        ]
+      },
+      
+      {
+        "Label": "HdmiOut1",
+        "Key": "HdmiOut1",
+        "IsHasChild": true,
+        "DetailResults": [
+          {
+            "Label": "Diff",
+            "Key": "DifferentPercent"
+          },
+
+          {
+            "Label": "Size",
+            "Key": "Size"
+          }
+        ]
+      }
+    ]
+  }, //HDMI-MEDIA PLAYER
+  {
+    "Id": "e5b690d4-cf67-4dee-a21d-8e97e3aa6f4e",
+    "TestingModuleStatus": 2,
+    "TestingModule": "HdmiGame",
+    "TestingStep": 0,
+    "Result": 2,
+    "Progress": 0,
+    "TestingOptions": [
+      "Audio",
+      "Video"
+    ],
+    "VideoOutputs": [ "HdmiOut1" ],
+    "Name": "HDMI-GAME",
+    "IsRetest": false,
+    "Order": 4,
+    "IsEnable": true,
+    "DetailResults": [
+      {
+        "Label": "Front-Left",
+        "Key": "FrontLeft",
+        "IsHasChild": true,
+        "DetailResults": [
+          {
+            "Label": "Tần số",
+            "Key": "Frequency",
+            "Unit": "Hz"
+          },
+          {
+            "Label": "Biên độ",
+            "Key": "Amplitude",
+            "Unit": "V"
+          },
+          {
+            "Label": "Thd",
+            "Key": "Thd",
+            "Unit": "%"
+          }
+        ]
+      },
+      {
+        "Label": "Front-Right",
+        "Key": "FrontRight",
+        "IsHasChild": true,
+        "DetailResults": [
+          {
+            "Label": "Tần số",
+            "Key": "Frequency",
+            "Unit": "Hz"
+          },
+          {
+            "Label": "Biên độ",
+            "Key": "Amplitude",
+            "Unit": "V"
+          },
+          {
+            "Label": "Thd",
+            "Key": "Thd",
+            "Unit": "%"
+          }
+        ]
+      },
+
+      {
+        "Label": "HdmiOut1",
+        "Key": "HdmiOut1",
+        "IsHasChild": true,
+        "DetailResults": [
+          {
+            "Label": "Diff",
+            "Key": "DifferentPercent"
+          },
+
+          {
+            "Label": "Size",
+            "Key": "Size"
+          }
+        ]
+      }
+    ]
+  }, //HDMI-GAME
+  {
+    "Id": "e5b690d4-cf67-4dee-a21d-8e97e3aa6f4e",
+    "TestingModuleStatus": 2,
+    "TestingModule": "DigitalGame",
+    "TestingStep": 0,
+    "Result": 2,
+    "Progress": 0,
+    "Name": "DIGITAL-GAME",
+    "TestingOptions": [
+      "Audio"
+    ],
+    "IsRetest": false,
+    "Order": 5,
+    "IsEnable": true,
+    "DetailResults": [
+      {
+        "Label": "Front-Left",
+        "Key": "FrontLeft",
+        "IsHasChild": true,
+        "DetailResults": [
+          {
+            "Label": "Tần số",
+            "Key": "Frequency",
+            "Unit": "Hz"
+          },
+          {
+            "Label": "Biên độ",
+            "Key": "Amplitude",
+            "Unit": "V"
+          },
+          {
+            "Label": "Thd",
+            "Key": "Thd",
+            "Unit": "%"
+          }
+        ]
+      },
+      {
+        "Label": "Front-Right",
+        "Key": "FrontRight",
+        "IsHasChild": true,
+        "DetailResults": [
+          {
+            "Label": "Tần số",
+            "Key": "Frequency",
+            "Unit": "Hz"
+          },
+          {
+            "Label": "Biên độ",
+            "Key": "Amplitude",
+            "Unit": "V"
+          },
+          {
+            "Label": "Thd",
+            "Key": "Thd",
+            "Unit": "%"
+          }
+        ]
+      }
+    ]
+  }, //DigitalGame
+  {
+    "Id": "e5b690d4-cf67-4dee-a21d-8e97e3aa6f4e",
+    "TestingModuleStatus": 2,
+    "TestingModule": "HdmiBluray",
+    "TestingStep": 0,
+    "Result": 2,
+    "Progress": 0,
+    "Name": "HDMI-BLURAY",
+    "VideoOutputs": [ "HdmiOut1" ],
+    "TestingOptions": [
+      "Audio",
+      "Video"
+    ],
+    "IsRetest": false,
+    "Order": 7,
+    "IsEnable": true,
+    "DetailResults": [
+      {
+        "Label": "Front-Left",
+        "Key": "FrontLeft",
+        "IsHasChild": true,
+        "DetailResults": [
+          {
+            "Label": "Tần số",
+            "Key": "Frequency",
+            "Unit": "Hz"
+          },
+          {
+            "Label": "Biên độ",
+            "Key": "Amplitude",
+            "Unit": "V"
+          },
+          {
+            "Label": "Thd",
+            "Key": "Thd",
+            "Unit": "%"
+          }
+        ]
+      },
+      {
+        "Label": "Front-Right",
+        "Key": "FrontRight",
+        "IsHasChild": true,
+        "DetailResults": [
+          {
+            "Label": "Tần số",
+            "Key": "Frequency",
+            "Unit": "Hz"
+          },
+          {
+            "Label": "Biên độ",
+            "Key": "Amplitude",
+            "Unit": "V"
+          },
+          {
+            "Label": "Thd",
+            "Key": "Thd",
+            "Unit": "%"
+          }
+        ]
+      },
+      {
+        "Label": "HdmiOut1",
+        "Key": "HdmiOut1",
+        "IsHasChild": true,
+        "DetailResults": [
+          {
+            "Label": "Diff",
+            "Key": "DifferentPercent"
+          },
+
+          {
+            "Label": "Size",
+            "Key": "Size"
+          }
+        ]
+      }
+    ]
+  }, //HDMI-BLURAY
+  {
+    "Id": "e5b690d4-cf67-4dee-a21d-8e97e3aa6f4e",
+    "TestingModuleStatus": 2,
+    "TestingModule": "HdmiDvd",
+    "TestingStep": 0,
+    "Result": 2,
+    "Progress": 0,
+    "Name": "HDMI-DVD",
+    "TestingOptions": [
+      "Audio",
+      "Video"
+    ],
+    "VideoOutputs": [ "HdmiOut2" ],
+    "IsRetest": false,
+    "Order": 9,
+    "IsEnable": true,
+    "DetailResults": [
+      {
+        "Label": "Front-Left",
+        "Key": "FrontLeft",
+        "IsHasChild": true,
+        "DetailResults": [
+          {
+            "Label": "Tần số",
+            "Key": "Frequency",
+            "Unit": "Hz"
+          },
+          {
+            "Label": "Biên độ",
+            "Key": "Amplitude",
+            "Unit": "V"
+          },
+          {
+            "Label": "Thd",
+            "Key": "Thd",
+            "Unit": "%"
+          }
+        ]
+      },
+      {
+        "Label": "Front-Right",
+        "Key": "FrontRight",
+        "IsHasChild": true,
+        "DetailResults": [
+          {
+            "Label": "Tần số",
+            "Key": "Frequency",
+            "Unit": "Hz"
+          },
+          {
+            "Label": "Biên độ",
+            "Key": "Amplitude",
+            "Unit": "V"
+          },
+          {
+            "Label": "Thd",
+            "Key": "Thd",
+            "Unit": "%"
+          }
+        ]
+      },
+      {
+        "Label": "HdmiOut2",
+        "Key": "HdmiOut2",
+        "IsHasChild": true,
+        "DetailResults": [
+          {
+            "Label": "Diff",
+            "Key": "DifferentPercent"
+          },
+
+          {
+            "Label": "Size",
+            "Key": "Size"
+          }
+        ]
+      }
+    ]
+  }, //HDMI-DVD
+  {
+    "Id": "e5b690d4-cf67-4dee-a21d-8e97e3aa6f4e",
+    "TestingModuleStatus": 2,
+    "TestingModule": "Version",
+    "TestingStep": 0,
+    "Result": 2,
+    "Progress": 0,
+    "Name": "VERSION",
+    "TestingOptions": [
+      "Video"
+    ],
+    "VideoOutputs": [ "HdmiOut2" ],
+    "IsRetest": false,
+    "Order": 8,
+    "IsEnable": true,
+    "DetailResults": [
+      {
+        "Label": "Main",
+        "Key": "Main",
+        "IsHasChild": false
+      },
+      {
+        "Label": "Main FBL",
+        "Key": "Main FBL",
+        "IsHasChild": false
+      },
+      {
+        "Label": "DSP",
+        "Key": "DSP",
+        "IsHasChild": false
+      },
+      {
+        "Label": "A.PLD",
+        "Key": "A.PLD",
+        "IsHasChild": false
+      },
+      {
+        "Label": "GUI",
+        "Key": "GUI",
+        "IsHasChild": false
+      },
+      {
+        "Label": "PIMG",
+        "Key": "PIMG",
+        "IsHasChild": false
+      },
+      {
+        "Label": "RSTR",
+        "Key": "RSTR",
+        "IsHasChild": false
+      },
+
+      {
+        "Label": "HEOS Version",
+        "Key": "HEOS Version",
+        "IsHasChild": false
+      },
+
+      {
+        "Label": "HEOS Config",
+        "Key": "HEOS Config",
+        "IsHasChild": false
+      },
+
+      {
+        "Label": "HEOS Locale",
+        "Key": "HEOS Locale",
+        "IsHasChild": false
+      }
+    ]
+  }, //VERSION
+  {
+    "Id": "e5b690d4-cf67-4dee-a21d-8e97e3aa6f4e",
+    "TestingModuleStatus": 2,
+    "TestingModule": "DigitalTV",
+    "TestingStep": 0,
+    "Result": 2,
+    "Progress": 0,
+    "Name": "DIGITAL-TV",
+    "TestingOptions": [
+      "Audio"
+    ],
+    "IsRetest": false,
+    "Order": 6,
+    "IsEnable": true,
+    "DetailResults": [
+      {
+        "Label": "Front-Left",
+        "Key": "FrontLeft",
+        "IsHasChild": true,
+        "DetailResults": [
+          {
+            "Label": "Tần số",
+            "Key": "Frequency",
+            "Unit": "Hz"
+          },
+          {
+            "Label": "Biên độ",
+            "Key": "Amplitude",
+            "Unit": "V"
+          },
+          {
+            "Label": "Thd",
+            "Key": "Thd",
+            "Unit": "%"
+          }
+        ]
+      },
+      {
+        "Label": "Front-Right",
+        "Key": "FrontRight",
+        "IsHasChild": true,
+        "DetailResults": [
+          {
+            "Label": "Tần số",
+            "Key": "Frequency",
+            "Unit": "Hz"
+          },
+          {
+            "Label": "Biên độ",
+            "Key": "Amplitude",
+            "Unit": "V"
+          },
+          {
+            "Label": "Thd",
+            "Key": "Thd",
+            "Unit": "%"
+          }
+        ]
+      }
+    ]
+  } //DigitalTv
+]

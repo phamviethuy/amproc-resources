@@ -1,0 +1,1462 @@
+[
+  {
+    "ModuleOption": {
+      "Modules": [
+        "HdmiCblSat"
+      ],
+      "BeginModules": [
+        "HdmiCblSat"
+      ],
+      "Messages": [
+        "Bắt đầu test",
+        "[HDMI-CBL/SAT]Bắt đầu"
+      ]
+    },
+    "Order": 1
+  },
+  {
+    "ModuleOption": {
+      "Messages": [
+        "Set Default Volume"
+      ],
+      "Delay": 8000,
+      "Actions": [
+        "SendRemoteCommand"
+      ]
+    },
+    "ComportOption": {
+      "RemoteCommands": [
+        {
+          "Id": "f807d1d8-a001-4e9b-9c4c-82915bfde421",
+          "Code": "DefaultVol",
+          "Delay": 2500
+        },
+        {
+          "Id": "f807d1d8-a001-4e9b-9c4c-82915bfde421",
+          "Code": "PowerOnZone2",
+          "Delay": 2500
+
+        },
+        {
+          "Id": "f807d1d8-a001-4e9b-9c4c-82915bfde421",
+          "Code": "DefaultVolZone2",
+          "Delay": 0
+        }
+      ]
+    },
+    "Order": 1
+  },
+  {
+    "PreConditionOption": {
+      "SourceMode": "CblSat",
+      "SoundModes": [
+        {
+          "Key": "CblSat",
+          "Value": "Auto"
+        }
+      ],
+      "Actions": [
+        "SendRemoteCommandWithParam"
+      ],
+      "Delay": {
+        "SourceModeOnly": 2000,
+        "SoundModeOnly": 2000,
+        "All": 3000
+      }
+    },
+    "ComportOption": {
+      "RemoteCommands": [
+        {
+          "Id": "f807d1d8-a001-4e9b-9c4c-82915bfde421",
+          "Code": "CblSat",
+          "Delay": 2000,
+          "Types": [
+            "SourceMode"
+          ]
+        },
+        {
+          "Id": "f807d1d8-a001-4e9b-9c4c-82915bfde421",
+          "Code": "InputModeAuto",
+          "Delay": 200,
+          "Types": [
+            "SoundMode"
+          ]
+        }
+      ]
+    },
+    "ModuleOption": {
+      "Modules": [
+        "HdmiCblSat"
+      ],
+      "Messages": [
+        "[HDMI-CBL/SAT] Đo tín hiệu "
+      ],
+      "Delay": 1000,
+      "Actions": [
+        "StartAudioCapture",
+        "StartVideoCapture"
+      ]
+    },
+    "VideoOption": {
+      "VideoInput": "HdmiCblSat",
+      "VideoOutput": "HdmiOut1"
+    },
+    "Order": 1
+  },
+  {
+    "ModuleOption": {
+      "Modules": [
+        "HdmiCblSat"
+      ],
+      "Messages": [
+        "[HDMI-CBL/SAT] Phân tích tín hiệu"
+      ],
+      "Actions": [
+        "AnalystAudio",
+        "AnalystVideo",
+        "StopAudioCapture",
+        "StopVideoCapture"
+      ],
+      "SoundModes": [
+        {
+          "Key": "CblSat",
+          "Value": "Auto"
+        }
+      ],
+      "SourceMode": "CblSat"
+    },
+    "VideoOption": {
+      "Modules": [
+        "HdmiCblSat"
+      ],
+      "VideoInput": "HdmiCblSat",
+      "VideoOutput": "HdmiOut1"
+    },
+    "AudioOption": {
+      "ModuleAudios": [
+        {
+          "Module": "HdmiCblSat",
+          "AudioInput": "HdmiCblSat",
+          "AudioOutput": "Speaker",
+          "AudioChannels": [
+            "FrontLeft",
+            "FrontRight"
+          ]
+        }
+      ]
+    },
+    "Order": 1
+  },
+  {
+    "ModuleOption": {
+      "Modules": [
+        "HdmiCblSat"
+      ],
+      "CompletedModules": [
+        "HdmiCblSat"
+      ],
+      "Messages": [
+        "Bắt đầu test",
+        "[HDMI-CBL/SAT]Hoàn thành"
+      ]
+    },
+    "Order": 1
+  },
+
+  //CvbsCblSat
+  {
+    "ModuleOption": {
+      "Modules": [
+        "CvbsCblSat"
+      ],
+      "BeginModules": [
+        "CvbsCblSat"
+      ],
+      "Messages": [
+        "[CvbsCblSat]Bắt đầu"
+      ]
+    },
+    "Order": 1
+  },
+  {
+    "ModuleOption": {
+      "Modules": [
+        "CvbsCblSat"
+      ],
+      "Messages": [
+        "[CvbsCblSat] Switch"
+      ],
+      "Actions": [ "SendDutCommand" ],
+      "Delay": 0
+    },
+    "ComportOption": {
+      "DutCommands": [
+        {
+          "ComportId": "f807d1d8-a001-4e9b-9c4c-82915bfde422",
+          "Code": "HdmiOut2",
+          "PinStatus": 0,
+          "Delay": 1
+        }
+      ]
+    },
+    "Order": 1
+  },
+  {
+    "PreConditionOption": {
+      "SourceMode": "CblSat",
+      "Actions": [
+        "SendRemoteCommandWithParam"
+      ],
+      "Delay": {
+        "SourceModeOnly": 3000,
+        "All": 3000
+      }
+    },
+    "ModuleOption": {
+      "Modules": [
+        "CvbsCblSat"
+      ],
+      "Messages": [
+        "[CvbsCblSat] Chọn mode"
+      ],
+      "Delay": 0
+    },
+    "ComportOption": {
+      "RemoteCommands": [
+        {
+          "Id": "f807d1d8-a001-4e9b-9c4c-82915bfde421",
+          "Code": "CblSat",
+          "Delay": 0,
+          "Types": [
+            "SourceMode"
+          ]
+        }
+      ]
+    },
+    "Order": 1
+  },
+  {
+    "ModuleOption": {
+      "Modules": [
+        "CvbsCblSat"
+      ],
+      "Messages": [
+        "[CvbsCblSat] Thu hình"
+      ],
+      "Actions": [
+        "StartVideoCapture"
+      ],
+      "SourceMode": "CblSat",
+      "Delay": 1000
+    },
+    "VideoOption": {
+      "VideoInput": "CvbsCblSat",
+      "VideoOutput": "CVBS"
+    },
+    "Order":1
+  },
+  {
+    "ModuleOption": {
+      "Modules": [
+        "CvbsCblSat"
+      ],
+      "Messages": [
+        "[CvbsCblSat] Phân tích tín hiệu"
+      ],
+      "Actions": [
+        "AnalystVideo",
+        "StopVideoCapture",
+        "SendDutCommand"
+      ]
+    },
+    "ComportOption": {
+      "DutCommands": [
+        {
+          "ComportId": "f807d1d8-a001-4e9b-9c4c-82915bfde422",
+          "Code": "HdmiOut1",
+          "PinStatus": 0,
+          "Delay": 1
+        }
+      ]
+    },
+    "VideoOption": {
+      "Modules": [
+        "CvbsCblSat"
+      ],
+      "VideoInput": "CvbsCblSat",
+      "VideoOutput": "CVBS"
+    },
+    "Order": 1
+  },
+  {
+    "ModuleOption": {
+      "Modules": [
+        "CvbsCblSat"
+      ],
+      "CompletedModules": [
+        "CvbsCblSat"
+      ],
+      "Messages": [
+        "[CvbsCblSat] Hoàn thành"
+      ],
+      "Delay": 1000
+    },
+    "Order": 1
+  },
+
+  //AUX2
+  {
+    "ModuleOption": {
+      "Modules": [
+        "HdmiAux2"
+      ],
+      "BeginModules": [
+        "HdmiAux2"
+      ],
+      "Messages": [
+        "[HdmiAux2]Bắt đầu"
+      ]
+    },
+    "Order": 3
+  },
+  {
+    "ModuleOption": {
+      "Modules": [
+        "HdmiAux2"
+      ],
+      "Messages": [
+        "[HdmiAux2] Chọn AUX2"
+      ],
+      "Actions": [
+        "SendRemoteCommand"
+      ],
+      "Delay": 4000
+    },
+    "ComportOption": {
+      "RemoteCommands": [
+        {
+          "Id": "f807d1d8-a001-4e9b-9c4c-82915bfde421",
+          "Code": "Aux2",
+          "Delay": 2500
+        },
+        {
+          "Id": "f807d1d8-a001-4e9b-9c4c-82915bfde421",
+          "Code": "InputModeHdmi",
+          "Delay": 0
+        }
+      ]
+    },
+    "Order": 3
+  },
+  {
+    "ModuleOption": {
+      "Modules": [
+        "HdmiAux2"
+      ],
+      "Messages": [
+        "[HdmiAux2] Đo tín hiệu"
+      ],
+      "Actions": [
+        "StartAudioCapture",
+        "StartVideoCapture"
+      ],
+      "SourceMode": "Aux2",
+      "Delay": 1000
+    },
+    "VideoOption": {
+      "VideoInput": "HdmiAux2",
+      "VideoOutput": "HdmiOut1"
+    },
+    "Order": 3
+  },
+  {
+    "ModuleOption": {
+      "Modules": [
+        "HdmiAux2"
+      ],
+      "Messages": [
+        "[HdmiAux2] Phân tích tín hiệu"
+      ],
+      "Actions": [
+        "AnalystAudio",
+        "AnalystVideo",
+        "StopAudioCapture",
+        "StopVideoCapture"
+      ]
+    },
+    "AudioOption": {
+      "ModuleAudios": [
+        {
+          "Module": "HdmiAux2",
+          "AudioInput": "HdmiAux2",
+          "AudioOutput": "Speaker",
+          "AudioChannels": [
+            "FrontLeft",
+            "FrontRight"
+          ]
+        }
+      ]
+    },
+    "VideoOption": {
+      "Modules": [
+        "HdmiAux2"
+      ],
+      "VideoInput": "HdmiAux2",
+      "VideoOutput": "HdmiOut1"
+    },
+
+    "Order": 3
+  },
+  {
+    "ModuleOption": {
+      "Modules": [
+        "HdmiAux2"
+      ],
+      "CompletedModules": [
+        "HdmiAux2"
+      ],
+      "Messages": [
+        "[HdmiAux2] Hoàn thành"
+      ],
+      "Delay": 1500
+    },
+    "Order": 3
+  },
+  //HdmiMediaPlayer
+  {
+    "ModuleOption": {
+      "Modules": [
+        "HdmiMediaPlayer"
+      ],
+      "BeginModules": [
+        "HdmiMediaPlayer"
+      ],
+      "Messages": [
+        "[HdmiMediaPlayer]Bắt đầu"
+      ]
+    },
+    "Order": 4
+  },
+  {
+    "ModuleOption": {
+      "Modules": [
+        "HdmiMediaPlayer"
+      ],
+      "Messages": [
+        "[HdmiMediaPlayer] Chọn mode"
+      ],
+      "Actions": [
+        "SendRemoteCommand"
+      ],
+      "Delay": 4000
+    },
+    "ComportOption": {
+      "RemoteCommands": [
+        {
+          "Id": "f807d1d8-a001-4e9b-9c4c-82915bfde421",
+          "Code": "MediaPlayer",
+          "Delay": 2500
+        },
+        {
+          "Id": "f807d1d8-a001-4e9b-9c4c-82915bfde421",
+          "Code": "InputModeHdmi",
+          "Delay": 0
+        }
+      ]
+    },
+    "Order": 4
+  },
+  {
+    "ModuleOption": {
+      "Modules": [
+        "HdmiMediaPlayer"
+      ],
+      "Messages": [
+        "[HdmiMediaPlayer] Đo tín hiệu"
+      ],
+      "Actions": [
+        "StartAudioCapture",
+        "StartVideoCapture"
+      ],
+      "SourceMode": "MediaPlayer",
+      "Delay": 1000
+    },
+    "VideoOption": {
+      "VideoInput": "HdmiMediaPlayer",
+      "VideoOutput": "HdmiOut1"
+    },
+    "Order": 4
+  },
+  {
+    "ModuleOption": {
+      "Modules": [
+        "HdmiMediaPlayer"
+      ],
+      "Messages": [
+        "[HdmiMediaPlayer] Phân tích tín hiệu"
+      ],
+      "Actions": [
+        "AnalystAudio",
+        "AnalystVideo",
+        "StopAudioCapture",
+        "StopVideoCapture"
+      ]
+    },
+    "AudioOption": {
+      "ModuleAudios": [
+        {
+          "Module": "HdmiMediaPlayer",
+          "AudioInput": "HdmiMediaPlayer",
+          "AudioOutput": "Speaker",
+          "AudioChannels": [
+            "FrontLeft",
+            "FrontRight"
+          ]
+        }
+      ]
+    },
+    "VideoOption": {
+      "Modules": [
+        "HdmiMediaPlayer"
+      ],
+      "VideoInput": "HdmiMediaPlayer",
+      "VideoOutput": "HdmiOut1"
+    },
+    "Order": 4
+  },
+  {
+    "ModuleOption": {
+      "Modules": [
+        "HdmiMediaPlayer"
+      ],
+      "CompletedModules": [
+        "HdmiMediaPlayer"
+      ],
+      "Messages": [
+        "[HdmiMediaPlayer] Hoàn thành"
+      ],
+      "Delay": 1000
+    },
+    "Order": 4
+  },
+
+  //DigitalMediaPlayer
+  {
+    "ModuleOption": {
+      "Modules": [
+        "DigitalMediaPlayer",
+        "CvbsMediaPlayer"
+      ],
+      "BeginModules": [
+        "DigitalMediaPlayer",
+        "CvbsMediaPlayer"
+      ],
+      "Messages": [
+        "[DigitalMediaPlayer]Bắt đầu",
+        "[CvbsMediaPlayer]Bắt đầu"
+      ]
+    },
+    "Order": 4
+  },
+  {
+    "ModuleOption": {
+      "Modules": [
+        "CvbsMediaPlayer"
+      ],
+      "Messages": [
+        "[CvbsMediaPlayer] Switch"
+      ],
+      "Actions": [ "SendDutCommand" ],
+      "Delay": 0
+    },
+    "ComportOption": {
+      "DutCommands": [
+        {
+          "ComportId": "f807d1d8-a001-4e9b-9c4c-82915bfde422",
+          "Code": "HdmiOut2",
+          "PinStatus": 0,
+          "Delay": 1
+        }
+      ]
+    },
+    "Order": 4
+  },
+  {
+    "PreConditionOption": {
+      "SourceMode": "MediaPlayer",
+      "SoundModes": [
+        {
+          "Key": "MediaPlayer",
+          "Value": "Digital"
+        }
+      ],
+      "Actions": [
+        "SendRemoteCommandWithParam"
+      ],
+      "Delay": {
+        "SourceModeOnly": 3000,
+        "SoundModeOnly": 3000,
+        "All": 5000
+      }
+    },
+    "ModuleOption": {
+      "Modules": [
+        "DigitalMediaPlayer",
+        "CvbsMediaPlayer"
+      ],
+      "Messages": [
+        "[DigitalMediaPlayer] Chọn mode",
+        "[CvbsMediaPlayer] Chọn mode"
+      ],
+      "Delay": 0
+    },
+    "ComportOption": {
+      "RemoteCommands": [
+        {
+          "Id": "f807d1d8-a001-4e9b-9c4c-82915bfde421",
+          "Code": "MediaPlayer",
+          "Delay": 3000,
+          "Types": [
+            "SourceMode"
+          ]
+        },
+        {
+          "Id": "f807d1d8-a001-4e9b-9c4c-82915bfde421",
+          "Code": "InputModeDigital",
+          "Delay": 200,
+          "Types": [
+            "SoundMode"
+          ]
+        }
+      ]
+    },
+    "Order": 4
+  },
+  {
+    "ModuleOption": {
+      "Modules": [
+        "DigitalMediaPlayer",
+        "CvbsMediaPlayer"
+      ],
+      "Messages": [
+        "[DigitalMediaPlayer] Đo tín hiệu",
+        "[CvbsMediaPlayer] Thu hình"
+      ],
+      "Actions": [
+        "StartAudioCapture",
+        "StartVideoCapture"
+      ],
+      "SourceMode": "MediaPlayer",
+      "SoundModes": [
+        {
+          "Key": "MediaPlayer",
+          "Value": "Digital"
+        }
+      ],
+      "Delay": 1000
+    },
+    "VideoOption": {
+      "VideoInput": "CvbsMediaPlayer",
+      "VideoOutput": "CVBS"
+    },
+    "Order": 4
+  },
+  {
+    "ModuleOption": {
+      "Modules": [
+        "DigitalMediaPlayer",
+        "CvbsMediaPlayer"
+      ],
+      "Messages": [
+        "[DigitalMediaPlayer] Phân tích tín hiệu",
+        "[CvbsMediaPlayer] Phân tích tín hiệu"
+      ],
+      "Actions": [
+        "AnalystAudio",
+        "AnalystVideo",
+        "StopAudioCapture",
+        "StopVideoCapture",
+        "SendDutCommand"
+      ]
+    },
+    "ComportOption": {
+      "DutCommands": [
+        {
+          "ComportId": "f807d1d8-a001-4e9b-9c4c-82915bfde422",
+          "Code": "HdmiOut1",
+          "PinStatus": 0,
+          "Delay": 1
+        }
+      ]
+    },
+    "VideoOption": {
+      "Modules": [
+        "CvbsMediaPlayer"
+      ],
+      "VideoInput": "CvbsMediaPlayer",
+      "VideoOutput": "CVBS"
+    },
+    "AudioOption": {
+      "ModuleAudios": [
+        {
+          "Module": "DigitalMediaPlayer",
+          "AudioInput": "DigitalMediaPlayer",
+          "AudioOutput": "Speaker",
+          "AudioChannels": [
+            "FrontLeft",
+            "FrontRight"
+          ]
+        }
+      ]
+    },
+    "Order": 4
+  },
+  {
+    "ModuleOption": {
+      "Modules": [
+        "DigitalMediaPlayer",
+        "CvbsMediaPlayer"
+      ],
+      "CompletedModules": [
+        "DigitalMediaPlayer",
+        "CvbsMediaPlayer"
+      ],
+      "Messages": [
+        "[CvbsMediaPlayer] Hoàn thành",
+        "[CVBS] Hoàn thành"
+      ]
+    },
+    "Order": 4
+  },
+
+  //HdmiGame
+  {
+    "ModuleOption": {
+      "Modules": [
+        "HdmiGame"
+      ],
+      "BeginModules": [
+        "HdmiGame"
+      ],
+      "Messages": [
+        "[HdmiGame]Bắt đầu"
+      ]
+    },
+    "Order": 4
+  },
+  {
+    "PreConditionOption": {
+      "SourceMode": "Game",
+      "SoundModes": [
+        {
+          "Key": "Game",
+          "Value": "Hdmi"
+        }
+      ],
+      "Actions": [
+        "SendRemoteCommandWithParam"
+      ],
+      "Delay": {
+        "SourceModeOnly": 4000,
+        "SoundModeOnly": 2000,
+        "All": 5000
+      }
+    },
+    "ModuleOption": {
+      "Modules": [
+        "HdmiGame"
+      ],
+      "Messages": [
+        "[HdmiGame] Chọn mode"
+      ],
+      "Actions": [
+        "SendRemoteCommand"
+      ]
+    },
+    "ComportOption": {
+      "RemoteCommands": [
+        {
+          "Id": "f807d1d8-a001-4e9b-9c4c-82915bfde421",
+          "Code": "Game",
+          "Delay": 3000,
+          "Types": [
+            "SourceMode"
+          ]
+        },
+        {
+          "Id": "f807d1d8-a001-4e9b-9c4c-82915bfde421",
+          "Code": "InputModeHdmi",
+          "Delay": 200,
+          "Types": [
+            "SoundMode"
+          ]
+        }
+      ]
+    },
+    "Order": 4
+  },
+  {
+    "ModuleOption": {
+      "Modules": [
+        "HdmiGame"
+      ],
+      "Messages": [
+        "[HdmiGame] Đo tín hiệu"
+      ],
+      "Actions": [
+        "StartAudioCapture",
+        "StartVideoCapture"
+      ],
+      "SourceMode": "Game",
+      "SoundModes": [
+        {
+          "Key": "Game",
+          "Value": "Hdmi"
+        }
+      ],
+      "Delay": 1000
+    },
+    "VideoOption": {
+      "VideoInput": "HdmiGame",
+      "VideoOutput": "HdmiOut1"
+    },
+    "Order": 4
+  },
+  {
+    "ModuleOption": {
+      "Modules": [
+        "HdmiGame"
+      ],
+      "Messages": [
+        "[HdmiGame] Phân tích tín hiệu"
+      ],
+      "Actions": [
+        "AnalystAudio",
+        "AnalystVideo",
+        "StopAudioCapture",
+        "StopVideoCapture"
+      ]
+    },
+    "AudioOption": {
+      "ModuleAudios": [
+        {
+          "Module": "HdmiGame",
+          "AudioInput": "HdmiGame",
+          "AudioOutput": "Speaker",
+          "AudioChannels": [
+            "FrontLeft",
+            "FrontRight"
+          ]
+        }
+      ]
+    },
+    "VideoOption": {
+      "Modules": [
+        "HdmiGame"
+      ],
+      "VideoInput": "HdmiGame",
+      "VideoOutput": "HdmiOut1"
+    },
+    "Order": 4
+  },
+  {
+    "ModuleOption": {
+      "Modules": [
+        "HdmiGame"
+      ],
+      "CompletedModules": [
+        "HdmiGame"
+      ],
+      "Messages": [
+        "[HdmiGame] Hoàn thành"
+      ]
+    },
+    "Order": 4
+  },
+
+  //HdmiBluray
+  {
+    "ModuleOption": {
+      "Modules": [
+        "HdmiBluray"
+      ],
+      "BeginModules": [
+        "HdmiBluray"
+      ],
+      "Messages": [
+        "[HdmiBluray]Bắt đầu"
+      ]
+    },
+    "Order": 5
+  },
+  {
+    "PreConditionOption": {
+      "SourceMode": "Bluray",
+      "SoundModes": [
+        {
+          "Key": "Bluray",
+          "Value": "Hdmi"
+        }
+      ],
+      "Actions": [
+        "SendRemoteCommandWithParam"
+      ],
+      "Delay": {
+        "SourceModeOnly": 4000,
+        "SoundModeOnly": 2000,
+        "All": 4000
+      }
+    },
+    "ModuleOption": {
+      "Modules": [
+        "HdmiBluray"
+      ],
+      "Messages": [
+        "[HdmiBluray] Chọn mode"
+      ]
+    },
+    "ComportOption": {
+      "RemoteCommands": [
+        {
+          "Id": "f807d1d8-a001-4e9b-9c4c-82915bfde421",
+          "Code": "Bluray",
+          "Delay": 2500,
+          "Types": [
+            "SourceMode"
+          ]
+        },
+        {
+          "Id": "f807d1d8-a001-4e9b-9c4c-82915bfde421",
+          "Code": "InputModeHdmi",
+          "Delay": 200,
+          "Types": [
+            "SoundMode"
+          ]
+        }
+      ]
+    },
+    "Order": 5
+  },
+  {
+    "ModuleOption": {
+      "Modules": [
+        "HdmiBluray"
+      ],
+      "Messages": [
+        "[HdmiBluray] Đo tín hiệu"
+      ],
+      "Actions": [
+        "StartAudioCapture",
+        "StartVideoCapture"
+      ],
+      "SourceMode": "Bluray",
+      "SoundModes": [
+        {
+          "Key": "Bluray",
+          "Value": "Hdmi"
+        }
+      ],
+      "Delay": 1000
+    },
+    "VideoOption": {
+      "VideoInput": "HdmiBluray",
+      "VideoOutput": "HdmiOut1"
+    },
+    "Order": 5
+  },
+  {
+    "ModuleOption": {
+      "Modules": [
+        "HdmiBluray"
+      ],
+      "Messages": [
+        "[HdmiBluray] Phân tích tín hiệu"
+      ],
+      "Actions": [
+        "AnalystAudio",
+        "AnalystVideo",
+        "StopAudioCapture",
+        "StopVideoCapture"
+      ]
+    },
+    "AudioOption": {
+      "ModuleAudios": [
+        {
+          "Module": "HdmiBluray",
+          "AudioInput": "HdmiBluray",
+          "AudioOutput": "Speaker",
+          "AudioChannels": [
+            "FrontLeft",
+            "FrontRight"
+          ]
+        }
+      ]
+    },
+    "VideoOption": {
+      "Modules": [
+        "HdmiBluray"
+      ],
+      "VideoInput": "HdmiBluray",
+      "VideoOutput": "HdmiOut1"
+    },
+    "Order": 5
+  },
+  {
+    "ModuleOption": {
+      "Modules": [
+        "HdmiBluray"
+      ],
+      "CompletedModules": [
+        "HdmiBluray"
+      ],
+      "Messages": [
+        "[HdmiBluray] Hoàn thành"
+      ]
+    },
+    "Order": 5
+  },
+
+  //VERSION
+  {
+    "ModuleOption": {
+      "Modules": [
+        "Version"
+      ],
+      "BeginModules": [
+        "Version"
+      ],
+      "Messages": [
+        "[Version] Bắt đầu"
+      ]
+    },
+    "Order": 6
+  },
+  {
+    "PreConditionOption": {
+      "SourceMode": "Bluray",
+      "Actions": [
+        "SendRemoteCommandWithParam"
+      ],
+      "Delay": {
+        "SourceModeOnly": 4500
+      }
+    },
+    "ComportOption": {
+      "RemoteCommands": [
+        {
+          "Id": "f807d1d8-a001-4e9b-9c4c-82915bfde421",
+          "Code": "Bluray",
+          "Delay": 0,
+          "Types": [
+            "SourceMode"
+          ]
+        }
+      ]
+    },
+    "ModuleOption": {
+      "Modules": [
+        "Version"
+      ],
+      "BeginModules": [
+        "Version"
+      ],
+      "Messages": [
+        "[Version] Chuyển Dvd nếu cần"
+      ]
+    },
+    "Order": 6
+  },
+  {
+    "ModuleOption": {
+      "Modules": [
+        "Version"
+      ],
+      "Messages": [
+        "[Version] Hiện version"
+      ],
+      "Actions": [
+        "SendRemoteCommand"
+      ],
+      "SourceMode": "Bluray",
+      "Delay": 2500
+    },
+    "ComportOption": {
+      "RemoteCommands": [
+        {
+          "Id": "f807d1d8-a001-4e9b-9c4c-82915bfde421",
+          "Code": "Version",
+          "Delay": 0
+        }
+      ]
+    },
+    "Order": 6
+  },
+  {
+    "ModuleOption": {
+      "Modules": [
+        "Version"
+      ],
+      "Messages": [
+        "[Version] Capture version"
+      ],
+      "Actions": [
+        "StartVideoCapture"
+      ],
+      "Delay": 1000
+    },
+    "VideoOption": {
+      "VideoInput": "Version",
+      "VideoOutput": "Version"
+    },
+    "Order": 6
+  },
+  {
+    "ModuleOption": {
+      "Modules": [
+        "Version"
+      ],
+      "Messages": [
+        "[Version] Check version"
+      ],
+      "Actions": [
+        "CheckVersion",
+        "StopVideoCapture"
+      ]
+    },
+
+    "VideoOption": {
+      "VideoInput": "Version",
+      "VideoOutput": "Version"
+    },
+    "Order": 6
+  },
+  {
+    "ModuleOption": {
+      "Modules": [
+        "Version"
+      ],
+      "CompletedModules": [
+        "Version"
+      ],
+      "Messages": [
+        "[Version] Hoàn thành"
+      ]
+    },
+    "Order": 6
+  },
+
+  //DigitalTV
+  {
+    "ModuleOption": {
+      "Modules": [
+        "DigitalTV",
+        "Zone2"
+      ],
+      "BeginModules": [
+        "DigitalTV",
+        "Zone2"
+      ],
+      "Messages": [
+        "[DigitalTV]Bắt đầu",
+        "[Zone2]Bắt đầu"
+      ]
+    },
+    "Order": 7
+  },
+  {
+    "PreConditionOption": {
+      "SourceMode": "DigitalTV",
+      "AmpAssignMode": "Zone2",
+      "Actions": [
+        "SendRemoteCommandWithParam"
+      ],
+      "Delay": {
+        // For lowtier, need to wait more longer 3s than middletier
+        "SourceModeOnly": 6000,
+        "AmpAssignModeOnly": 12500,
+        "All": 18000
+      }
+    },
+    "ModuleOption": {
+      "Modules": [
+        "DigitalTV",
+        "Zone2"
+      ],
+      "Messages": [
+        "[DigitalTV] Chọn mode",
+        "[Zone2] On Zone2"
+      ]
+    },
+    "ComportOption": {
+      "RemoteCommands": [
+        {
+          "Id": "f807d1d8-a001-4e9b-9c4c-82915bfde421",
+          "Code": "TvAudio",
+          // For lowtier, need to wait more longer 3s than middletier
+          "Delay": 5500,
+          "Types": [
+            "SourceMode"
+          ]
+        },
+        {
+          "Id": "f807d1d8-a001-4e9b-9c4c-82915bfde421",
+          "Code": "Zone2On",
+          "Delay": 200,
+          "Types": [
+            "AmpAssign"
+          ]
+        }
+      ]
+    },
+    "Order": 7
+  },
+  {
+    "ModuleOption": {
+      "Modules": [
+        "DigitalTV",
+        "Zone2"
+      ],
+      "Messages": [
+        "[DigitalTV] Đo tín hiệu",
+        "[Zone2] Đo tín hiệu"
+      ],
+      "Actions": [
+        "StartAudioCapture"
+      ],
+      "Delay": 1000,
+      "SourceMode": "DigitalTV",
+      "AmpAssignMode": "Zone2"
+    },
+    "Order": 7
+  },
+  {
+    "ModuleOption": {
+      "Modules": [
+        "DigitalTV",
+        "Zone2"
+      ],
+      "Messages": [
+        "[DigitalTV] Phân tích tín hiệu",
+        "[Zone2] Phân tích tín hiệu"
+      ],
+      "Actions": [
+        "AnalystAudio",
+        "StopAudioCapture"
+      ]
+    },
+    "AudioOption": {
+      "ModuleAudios": [
+        {
+          "Module": "DigitalTV",
+          "AudioInput": "DigitalTV",
+          "AudioOutput": "Speaker",
+          "AudioChannels": [
+            "FrontLeft",
+            "FrontRight"
+          ]
+        },
+        {
+          "Module": "Zone2",
+          "AudioInput": "Zone2",
+          "AudioOutput": "Speaker",
+          "AudioChannels": [
+            "SurroundBackLeft",
+            "SurroundBackRight"
+          ]
+        }
+      ]
+    },
+    "Order": 7
+  },
+  {
+    "ModuleOption": {
+      "Modules": [
+        "DigitalTV",
+        "Zone2"
+      ],
+      "CompletedModules": [
+        "DigitalTV",
+        "Zone2"
+      ],
+      "Messages": [
+        "[DigitalTV] Hoàn thành",
+        "[Zone2] Hoàn thành"
+      ]
+    },
+    "Order": 7
+  },
+
+
+  //HdmiAux1
+  {
+    "ModuleOption": {
+      "Modules": [
+        "HdmiAux1"
+      ],
+      "BeginModules": [
+        "HdmiAux1"
+      ],
+      "Messages": [
+        "[HdmiAux1]Bắt đầu"
+      ]
+    },
+    "Order": 8
+  },
+  {
+    "PreConditionOption": {
+      "SourceMode": "Aux1",
+      "AmpAssignMode": "Surroundback",
+      "Actions": [
+        "SendRemoteCommandWithParam"
+      ],
+      //For Lowtier need wait more 3s than middle tier
+      "Delay": {
+        "SourceModeOnly": 6000,
+        "AmpAssignModeOnly": 12500,
+        "All": 18000
+      }
+    },
+    "ComportOption": {
+      "RemoteCommands": [
+        {
+          "Id": "f807d1d8-a001-4e9b-9c4c-82915bfde421",
+          "Code": "Aux",
+          //For Lowtier need wait more 3s than middle tier
+          "Delay": 5500,
+          "Types": [
+            "SourceMode"
+          ]
+        },
+        {
+          "Id": "f807d1d8-a001-4e9b-9c4c-82915bfde421",
+          "Code": "SurroundbackOn",
+          "Delay": 200,
+          "Types": [
+            "AmpAssign"
+          ]
+        }
+      ]
+    },
+    "ModuleOption": {
+      "Modules": [
+        "HdmiAux1"
+      ],
+      "Messages": [
+        "[HdmiAux1] Chọn HdmiAux"
+      ]
+    },
+    "Order": 8
+  },
+  {
+    "ModuleOption": {
+      "Modules": [
+        "HdmiAux1"
+      ],
+      "Messages": [
+        "[HdmiAux1] Chon Multiple channel stereo"
+      ],
+      "Actions": [
+        "SendRemoteCommand"
+      ],
+      "SourceMode": "Aux1",
+      "AmpAssignMode": "Surroundback",
+      "Delay": 3000
+    },
+    "ComportOption": {
+      "RemoteCommands": [
+        {
+          "Id": "f807d1d8-a001-4e9b-9c4c-82915bfde421",
+          "Code": "MutilChannelStereo",
+          "Delay": 1500
+        },
+        {
+          "Id": "f807d1d8-a001-4e9b-9c4c-82915bfde421",
+          "Code": "InputModeHdmi",
+          "Delay": 1
+        }
+      ]
+    },
+    "Order": 8
+  },
+  {
+    "ModuleOption": {
+      "Modules": [
+        "HdmiAux1"
+      ],
+      "Messages": [
+        "[HdmiAux1] Đo tín hiệu"
+      ],
+      "Actions": [
+        "StartAudioCapture",
+        "StartVideoCapture"
+      ],
+      "Delay": 1000
+    },
+    "VideoOption": {
+      "VideoInput": "HdmiAux1",
+      "VideoOutput": "HdmiOut1"
+    },
+    "Order": 8
+  },
+  {
+    "ModuleOption": {
+      "Modules": [
+        "HdmiAux1"
+      ],
+      "Messages": [
+        "[HdmiAux1] Phân tích tín hiệu"
+      ],
+      "Actions": [
+        "AnalystAudio",
+        "AnalystVideo",
+        "StopAudioCapture",
+        "StopVideoCapture"
+      ]
+    },
+    "AudioOption": {
+      "ModuleAudios": [
+        {
+          "Module": "HdmiAux1",
+          "AudioInput": "HdmiAux1",
+          "AudioOutput": "Speaker",
+          "AudioChannels": [
+            "FrontLeft",
+            "FrontRight",
+            "Center",
+            "SurroundLeft",
+            "SurroundRight",
+            "SurroundBackLeft",
+            "SurroundBackRight"
+          ]
+        }
+      ]
+    },
+    "VideoOption": {
+      "Modules": [
+        "HdmiAux1"
+      ],
+      "VideoInput": "HdmiAux1",
+      "VideoOutput": "HdmiOut1"
+    },
+    "Order": 8
+  },
+  {
+    "ModuleOption": {
+      "Modules": [
+        "HdmiAux1"
+      ],
+      "CompletedModules": [
+        "HdmiAux1"
+      ],
+      "Messages": [
+        "[HdmiAux1] Hoàn thành"
+      ]
+    },
+    "Order": 8
+  },
+
+  {
+    "IsCompleteFlow": true,
+    "Order": 999
+  }
+]
