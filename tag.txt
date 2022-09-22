@@ -1,1 +1,1 @@
-AMPROC HEOS VERSION, Version=1.1.7.0, Culture=neutral, PublicKeyToken=null - 09/21/2022 17:48:37
+AMPROC HEOS VERSION, Version=1.1.8.0, Culture=neutral, PublicKeyToken=null - 09/22/2022 08:46:34
