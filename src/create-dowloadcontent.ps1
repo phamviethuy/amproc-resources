@@ -1,12 +1,12 @@
 
-Write-Output "------------------------BUILD RELASE------------------------"
+Write-Output "------------------------CREATE HTML------------------------"
 
 $ownerName = "phamviethuy"
 $repositoryName = "amproc-resources"
 $fileName="src/index.html"
 
 Import-Module -Name "./PowerShellForGitHub-0.15.0/PowerShellForGitHub.psm1"
-$PSDefaultParameterValues["*-GitHub*:AccessToken"] = "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"
+$PSDefaultParameterValues["*-GitHub*:AccessToken"] = "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"
 Set-GitHubConfiguration -DisableTelemetry
 
 function Get-ReleaseId([string]$Tagname) {
@@ -43,18 +43,35 @@ function Set-LogModule([string]$Content) {
     Write-Host "-----------------------------$($Content)-----------------------------"
 }
 
-
 try { 
+    $releases = Get-GitHubRelease -OwnerName $ownerName -RepositoryName $repositoryName
+    $htmlBody = ""
+    foreach ($release in $releases) {
+        if($release.tag_name -cne 'v1.0.4'){
+            foreach ($asset in $release.assets) {
+                if($release.tag_name -eq 'configurations'){
+                   
+                }elseif($release.tag_name -eq 'Resources'){
 
-    Set-LogModule  'Update HTML file'
-    Set-GitHubContent -OwnerName $ownerName -RepositoryName $repositoryName  -Path $fileName -CommitMessage $content -Content $content -BranchName main
-    Write-Host "CREATE HTML FILE DONE"
-    
+                }else{
+                    $htmlBody = $htmlBody+ "<a href='$($asset.browser_download_url)'>$($release.tag_name)</a> 
+                    </br>"
+                }
+            }
+        }
+    }
+    Write-Host "HTML BODY: $($htmlBody)"
+
+    $content = Get-Content template.html -Raw
+    $content = $content.Replace("{body}",$htmlBody)
+
+    Set-GitHubContent -OwnerName $ownerName -RepositoryName $repositoryName  -Path $fileName -CommitMessage 'update html' -Content $content -BranchName main
 }
 catch { 
     Write-Host "An error occurred:"
     Write-Host $_
 }
 
-Write-Host "Create HTML file done" 
+##Get-Help New-GitHubReleaseAsset -ShowWindow
+
 Read-Host "Enter to exsit"
