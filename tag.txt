@@ -1,1 +1,1 @@
-VESS FCT, Version=1.0.6.0, Culture=neutral, PublicKeyToken=null - 03/30/2023 14:40:17
+LEAK CURRENT MEASUREMENT, Version=1.0.8.0, Culture=neutral, PublicKeyToken=null - 03/31/2023 14:48:21
