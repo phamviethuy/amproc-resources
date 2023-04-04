@@ -1,1 +1,1 @@
-LEAK CURRENT MEASUREMENT, Version=1.0.8.0, Culture=neutral, PublicKeyToken=null - 03/31/2023 14:48:21
+LG S77S FCT, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null - 04/04/2023 19:53:47
