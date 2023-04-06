@@ -1,1 +1,1 @@
-LG S77S FCT, Version=2.1.6.0, Culture=neutral, PublicKeyToken=null - 04/06/2023 09:50:32
+LG S77S FCT, Version=2.1.7.0, Culture=neutral, PublicKeyToken=null - 04/06/2023 10:25:18
