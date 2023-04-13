@@ -1,1 +1,1 @@
-VESS FCT, Version=1.2.1.0, Culture=neutral, PublicKeyToken=null - 04/12/2023 18:25:56
+VESS FCT, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null - 04/13/2023 09:59:07
