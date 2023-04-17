@@ -1,1 +1,1 @@
-LEAK CURRENT MEASUREMENT, Version=1.1.1.0, Culture=neutral, PublicKeyToken=null - 04/17/2023 09:36:54
+LEAK CURRENT MEASUREMENT, Version=1.1.2.0, Culture=neutral, PublicKeyToken=null - 04/17/2023 09:55:56
