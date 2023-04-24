@@ -1,1 +1,1 @@
-VESS FCT, Version=1.2.8.0, Culture=neutral, PublicKeyToken=null - 04/19/2023 11:53:32
+LG S77S FCT, Version=2.1.9.0, Culture=neutral, PublicKeyToken=null - 04/24/2023 10:05:48
