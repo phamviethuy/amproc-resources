@@ -1,1 +1,1 @@
-AMPROC HEOS VERSION, Version=2.1.12.0, Culture=neutral, PublicKeyToken=null - 05/16/2023 13:50:52
+DENON HOME FCT, Version=1.2.10.0, Culture=neutral, PublicKeyToken=null - 05/16/2023 16:01:00
