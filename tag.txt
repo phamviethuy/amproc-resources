@@ -1,1 +1,1 @@
-DENON HOME FCT, Version=1.2.10.0, Culture=neutral, PublicKeyToken=null - 05/16/2023 16:01:00
+DENON HOME FCT, Version=1.2.11.0, Culture=neutral, PublicKeyToken=null - 05/19/2023 08:07:51
