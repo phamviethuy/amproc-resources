@@ -1,1 +1,1 @@
-DENON HOME VERSION, Version=1.2.12.0, Culture=neutral, PublicKeyToken=null - 05/19/2023 14:49:26
+LG S77S FCT, Version=2.1.10.0, Culture=neutral, PublicKeyToken=null - 05/20/2023 17:27:23
