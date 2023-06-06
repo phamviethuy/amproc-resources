@@ -1,1 +1,1 @@
-VESS FCT, Version=1.3.6.0, Culture=neutral, PublicKeyToken=null - 06/02/2023 14:26:34
+YAMAHA-CS LOG Monitor, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null - 06/06/2023 11:37:25
