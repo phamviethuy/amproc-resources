@@ -1,1 +1,1 @@
-YAMAHA-CS LOG Monitor, Version=1.0.8.0, Culture=neutral, PublicKeyToken=null - 06/09/2023 15:02:20
+YAMAHA-CS LOG Monitor, Version=1.0.9.0, Culture=neutral, PublicKeyToken=null - 06/09/2023 17:13:51
